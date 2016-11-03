@@ -1,0 +1,26 @@
+<div ng-controller="PopoverDemoCtrl as ctrl" ng-cloak>
+
+  <md-content layout-padding>
+    <div layout="column" layout-align="center center">
+      <div style="text-align: center" aria-label="Material User">
+        <div>
+          <img class="md-border-radius-round" src="img/donut.jpg" width="100" />
+        </div>
+        <h3 class="md-title">Material User</h3>
+        <h6 class="md-subhead">The best in the business.</h6>
+        <md-popover md-close-trigger="click">
+          <md-popover-title layout="row">
+            <h3>Some cool title!</h3>
+            <span flex></span>
+            <md-icon md-svg-src="img/icons/ic_code_24px.svg"></md-icon>
+          </md-popover-title>
+          <md-popover-content>
+            Some cool content that will go into the content area of the popover!
+            This is a test by <strong>{{ctrl.name}}</strong>.
+          </md-popover-content>
+        </md-popover>
+      </div>
+    </div>
+  </md-content>
+
+</div>
